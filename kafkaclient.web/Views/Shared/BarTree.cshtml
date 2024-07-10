@@ -1,0 +1,104 @@
+<div class="file-tree-container">
+    <div class="buttons">
+        <button id="addButton"><i class="fas fa-plus"></i> Agregar</button>
+        <button id="deleteButton"><i class="fas fa-minus"></i> Eliminar</button>
+        @* <button id="addButton">Agregar</button>
+        <button id="deleteButton">Eliminar</button> *@
+    </div>
+    <div id="elementsTree">
+        <ul>
+            <li>
+                <span class="caret"><i class="fas fa-folder"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Clusters</span>
+                @* <span class="caret"><i class="fas fa-folder"></i> Clusters</span> *@
+                <ul class="nested">
+                    <li>
+                        <span class="caret"><i class="fas fa-server"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> localhost</span>
+                        @* <span class="caret"><i class="fas fa-server"></i> localhost</span> *@
+                        <ul class="nested">
+                            <li>
+                                <span class="caret"><i class="fas fa-database"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Brokers</span>
+                                @* <span class="caret"><i class="fas fa-database"></i> Brokers</span> *@
+                                <ul class="nested">
+                                    <li><i class="fas fa-network-wired"></i> uno:9092</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret"><i class="fas fa-stream"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Topics</span>
+                                @* <span class="caret"><i class="fas fa-stream"></i> Topics</span> *@
+                                <ul class="nested">
+                                    <li><i class="fas fa-dot-circle"></i> uno</li>
+                                    <li><i class="fas fa-dot-circle"></i> dos</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret"><i class="fas fa-users"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Consumers</span>
+                                @* <span class="caret"><i class="fas fa-users"></i> Consumers</span> *@
+                                <ul class="nested">
+                                    <li><i class="fas fa-user"></i> test-consumer</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="caret">Clusters</span>
+                <ul class="nested">
+                    <li>
+                        <span class="caret">localhost</span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">Brokers</span>
+                                <ul class="nested">
+                                    <li>uno:9092</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">Topics</span>
+                                <ul class="nested">
+                                    <li>uno</li>
+                                    <li>dos</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">Consumers</span>
+                                <ul class="nested">
+                                    <li>test-consumer</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="caret">Clusters</span>
+                <ul class="nested">
+                    <li>
+                        <span class="caret">localhost</span>
+                        <ul class="nested">
+                            <li>
+                                <span class="caret">Brokers</span>
+                                <ul class="nested">
+                                    <li>uno:9092</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">Topics</span>
+                                <ul class="nested">
+                                    <li>uno</li>
+                                    <li>dos</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="caret">Consumers</span>
+                                <ul class="nested">
+                                    <li>test-consumer</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

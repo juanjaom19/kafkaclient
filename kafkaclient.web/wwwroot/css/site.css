@@ -1,0 +1,152 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* margin-bottom: 60px; */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  /* display: flex;
+  flex-grow: 1;
+  overflow: hidden; */
+
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  height: calc(100vh - 50px);
+}
+
+.file-tree-container {
+  /*position: fixed;
+  left: 0;
+  top: 57px;
+  bottom: 0; */
+  width: 300px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.file-tree-container::-webkit-scrollbar,
+.container::-webkit-scrollbar {
+  width: 12px; /* ancho del scrollbar */
+}
+
+.file-tree-container::-webkit-scrollbar-track,
+.content-container::-webkit-scrollbar-track  {
+  background: #fcfbfb; /* color de la pista */
+}
+
+.file-tree-container::-webkit-scrollbar-thumb,
+.content-container::-webkit-scrollbar-thumb {
+  background: #888; /* color del thumb */
+}
+
+.file-tree-container::-webkit-scrollbar-thumb:hover,
+.content-container::-webkit-scrollbar-thumb:hover  {
+  background: #555; /* color del thumb al pasar el cursor */
+}
+
+.content-container {
+  flex-grow: 1;
+  border: 2px solid black;
+  background-color: white;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #454c53;
+  border: 2px solid #454c53;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  /* box-shadow: 0 0 0 3px white, 0 0 0 5px black; */
+
+  box-shadow: 0 0 0 4px white, 0 0 0 6px #454c53;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:active {
+  box-shadow: 0 0 0 2px white, 0 0 0 6px #454c53;
+  transform: translateY(1px);
+  background-color: #454c53;
+  color: white;
+}
+
+#elementsTree ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#elementsTree li {
+  margin: 5px 0;
+}
+
+.caret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6"; /* Black right-pointing triangle */
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg); /* Rotate the arrow to point down */
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+i {
+  margin-right: 5px;
+}
