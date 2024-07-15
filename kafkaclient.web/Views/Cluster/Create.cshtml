@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Create Cluster";
+}
+
+<div class="form-container">
+    <h2>Agregar Cluster</h2>
+    <form id="createClusterForm">
+        <div class="form-group">
+            <label for="clusterName">Cluster Name:</label>
+            <input type="text" id="Name" name="clusterName">
+            <span class="text-danger" id="NameError"></span>
+        </div>
+        <div class="form-group">
+            <label for="kafkaVersion">Kafka Cluster Version:</label>
+            <input type="text" id="Version" name="kafkaVersion">
+            <span class="text-danger" id="VersionError"></span>
+        </div>
+        <div class="form-group">
+            <label for="zookeeperHost">Zookeeper Host:</label>
+            <input type="text" id="Host" name="zookeeperHost">
+            <span class="text-danger" id="HostError"></span>
+        </div>
+        <div class="form-group">
+            <label for="chrootPath">Chroot Path:</label>
+            <input type="text" id="Path" name="chrootPath">
+            <span class="text-danger" id="PathError"></span>
+        </div>
+        <div class="buttons">
+            <button type="button" id="saveButton" class="win98-button">Agregar</button>
+            <button type="button" id="testConnection" class="win98-button">Test Connection</button>
+        </div>
+    </form>
+    <div id="loader" style="display:none;">Loading...</div>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/createCluster.js"></script>
+}

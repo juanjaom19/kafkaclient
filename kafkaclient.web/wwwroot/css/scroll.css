@@ -1,0 +1,21 @@
+
+.file-tree-container::-webkit-scrollbar,
+.container::-webkit-scrollbar {
+  width: 12px; /* ancho del scrollbar */
+}
+
+.file-tree-container::-webkit-scrollbar-track,
+.content-container::-webkit-scrollbar-track  {
+  background: #fcfbfb; /* color de la pista */
+}
+
+.file-tree-container::-webkit-scrollbar-thumb,
+.content-container::-webkit-scrollbar-thumb {
+  background: #888; /* color del thumb */
+}
+
+.file-tree-container::-webkit-scrollbar-thumb:hover,
+.content-container::-webkit-scrollbar-thumb:hover  {
+  background: #555; /* color del thumb al pasar el cursor */
+}
+

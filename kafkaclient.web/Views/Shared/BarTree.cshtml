@@ -1,98 +1,64 @@
 <div class="file-tree-container">
     <div class="buttons">
-        <button id="addButton"><i class="fas fa-plus"></i> Agregar</button>
-        <button id="deleteButton"><i class="fas fa-minus"></i> Eliminar</button>
-        @* <button id="addButton">Agregar</button>
-        <button id="deleteButton">Eliminar</button> *@
+        <button id="addButton" class="win98-button"><i class="fas fa-plus"></i> Agregar</button>
+        <button id="deleteButton" class="win98-button"><i class="fas fa-minus"></i> Eliminar</button>
     </div>
     <div id="elementsTree">
         <ul>
-            <li>
-                <span class="caret"><i class="fas fa-folder"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Clusters</span>
-                @* <span class="caret"><i class="fas fa-folder"></i> Clusters</span> *@
+            <li id="cluster-1">
+                <span class="caret">
+                    <span class="toggle-icon"><i class="fas fa-plus"></i></span> 
+                    <i class="fas fa-folder"></i> Clusters
+                </span>
                 <ul class="nested">
-                    <li>
-                        <span class="caret"><i class="fas fa-server"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> localhost</span>
-                        @* <span class="caret"><i class="fas fa-server"></i> localhost</span> *@
+                    <li id="localhost">
+                        <span class="caret">
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span> 
+                            <i class="fas fa-server"></i> localhost
+                        </span>
                         <ul class="nested">
-                            <li>
-                                <span class="caret"><i class="fas fa-database"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Brokers</span>
-                                @* <span class="caret"><i class="fas fa-database"></i> Brokers</span> *@
-                                <ul class="nested">
-                                    <li><i class="fas fa-network-wired"></i> uno:9092</li>
+                            <li id="brokers-localhost">
+                                <span class="caret">
+                                    <span class="toggle-icon"><i class="fas fa-plus"></i></span> 
+                                    <i class="fas fa-database"></i> Brokers
+                                </span>
+                                <ul class="nested ">
+                                    <li id="uno:9092">
+                                        <span class="caretli">
+                                            <i class="fas fa-network-wired"></i> uno:9092
+                                        </span>
+                                    </li>
                                 </ul>
                             </li>
-                            <li>
-                                <span class="caret"><i class="fas fa-stream"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Topics</span>
-                                @* <span class="caret"><i class="fas fa-stream"></i> Topics</span> *@
+                            <li id="topics-localhost">
+                                <span class="caret">
+                                    <span class="toggle-icon"><i class="fas fa-plus"></i></span> 
+                                    <i class="fas fa-stream"></i> Topics
+                                </span>
                                 <ul class="nested">
-                                    <li><i class="fas fa-dot-circle"></i> uno</li>
-                                    <li><i class="fas fa-dot-circle"></i> dos</li>
+                                    <li id="uno">
+                                        <span class="caretli">
+                                            <i class="fas fa-dot-circle"></i> uno
+                                        </span>
+                                    </li>
+                                    <li id="dos">
+                                        <span class="caretli">
+                                            <i class="fas fa-dot-circle"></i> dos
+                                        </span>
+                                    </li>
                                 </ul>
                             </li>
-                            <li>
-                                <span class="caret"><i class="fas fa-users"></i> <span class="icon"><i class="fas fa-plus-square"></i></span> Consumers</span>
-                                @* <span class="caret"><i class="fas fa-users"></i> Consumers</span> *@
+                            <li id="consumers-localhost">
+                                <span class="caret">
+                                    <span class="toggle-icon"><i class="fas fa-plus"></i></span> 
+                                    <i class="fas fa-users"></i> Consumers
+                                </span>
                                 <ul class="nested">
-                                    <li><i class="fas fa-user"></i> test-consumer</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <span class="caret">Clusters</span>
-                <ul class="nested">
-                    <li>
-                        <span class="caret">localhost</span>
-                        <ul class="nested">
-                            <li>
-                                <span class="caret">Brokers</span>
-                                <ul class="nested">
-                                    <li>uno:9092</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="caret">Topics</span>
-                                <ul class="nested">
-                                    <li>uno</li>
-                                    <li>dos</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="caret">Consumers</span>
-                                <ul class="nested">
-                                    <li>test-consumer</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <span class="caret">Clusters</span>
-                <ul class="nested">
-                    <li>
-                        <span class="caret">localhost</span>
-                        <ul class="nested">
-                            <li>
-                                <span class="caret">Brokers</span>
-                                <ul class="nested">
-                                    <li>uno:9092</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="caret">Topics</span>
-                                <ul class="nested">
-                                    <li>uno</li>
-                                    <li>dos</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="caret">Consumers</span>
-                                <ul class="nested">
-                                    <li>test-consumer</li>
+                                    <li id="test-consumer">
+                                        <span class="caretli">
+                                            <i class="fas fa-user"></i> test-consumer
+                                        </span>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>

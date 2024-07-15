@@ -1,0 +1,46 @@
+/* input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid black;
+  box-sizing: border-box;
+} */
+
+/* input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(hsla(0,0%,0%,.1) 1px, transparent 1px), linear-gradient(90deg, hsla(0,0%,0%,.1) 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1);
+} */
+
+/* input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #a1a1a1;
+  box-sizing: border-box;
+  background-color: white;
+  background-color: #f9f9f9;
+  box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #a1a1a1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(hsla(0,0%,0%,.1) 1px, transparent 1px), linear-gradient(90deg, hsla(0,0%,0%,.1) 1px, transparent 1px);
+}  */
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-color: #f9f9f9;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #000;
+    outline: none;
+  
+    background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(hsla(0,0%,0%,.1) 1px, transparent 1px), linear-gradient(90deg, hsla(0,0%,0%,.1) 1px, transparent 1px);
+}

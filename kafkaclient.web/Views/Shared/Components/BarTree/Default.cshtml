@@ -1,0 +1,32 @@
+@using kafkaclient.web.Core.Dto
+
+@model PageResponse<ClusterDto>
+
+<div class="file-tree-container">
+    <div class="buttons">
+        <button id="addButton" class="win98-button"><i class="fas fa-plus"></i> Agregar</button>
+        <button id="deleteButton" class="win98-button"><i class="fas fa-minus"></i> Eliminar</button>
+    </div>
+    <div id="elementsTree">
+        <ul>
+            <li id="cluster-1">
+                <span class="caret">
+                    <span class="toggle-icon"><i class="fas fa-plus"></i></span> 
+                    <i class="fas fa-folder"></i> Clusters
+                </span>
+                @foreach (var cluster in Model.Data)
+                {
+                    <ul class="nested">
+                        <li id="clusters-@cluster.Slug">
+                            <span class="caret">
+                                <span class="toggle-icon"><i class="fas fa-plus"></i></span> 
+                                <i class="fas fa-server"></i> @cluster.Name
+                            </span>
+                        </li>
+                    </ul>
+                }
+                
+            </li>
+        </ul>
+    </div>
+</div>

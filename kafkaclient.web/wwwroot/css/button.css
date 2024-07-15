@@ -1,0 +1,87 @@
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button.win98-button {
+    background-color: #C0C0C0;
+    border: 2px solid #000;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 1px 1px 0px #fff, -1px -1px 0px #000;
+    transition: box-shadow 0.2s, transform 0.2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+button.win98-button:active {
+    box-shadow: inset 1px 1px 0 #000, inset -1px -1px 0 #fff;
+    transform: translateY(1px);
+    background-color: #C0C0C0;
+    color: white;
+}
+
+button.win98-button:disabled {
+    box-shadow: 1px 1px 0px #fff, -1px -1px 0px #000;
+    background-color: #d3d3d3;
+    color: #808080;
+    border: 2px solid #808080;
+    cursor: not-allowed;
+    pointer-events: none;
+    /* box-shadow: none; */
+}
+
+button.win98-button:hover {
+    background-color: white;
+    color: black;
+}
+
+  
+button.owndesign {
+    background-color: #454c53;
+    border: 2px solid #454c53;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    /* box-shadow: 0 0 0 3px white, 0 0 0 5px black; */
+    box-shadow: 0 0 0 4px white, 0 0 0 6px #454c53;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+  
+button.owndesign:hover {
+    background-color: white;
+    color: black;
+}
+  
+button.owndesign:active {
+    box-shadow: 0 0 0 2px white, 0 0 0 6px #454c53;
+    transform: translateY(1px);
+    background-color: #454c53;
+    color: white;
+}
+
+
+span.ripple-button {
+    background-color: #d3d3d3;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 1200ms linear, fade 1500ms ease-out forwards;
+    
+}
+ 
+@keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+}
